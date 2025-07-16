@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: SAMSUMNG
+  descripcion: LALALALLA
+  precio: 1000
+
+two:
+  titulo: NITENDO SWITCH
+  descripcion: MyText
+  precio: 2000

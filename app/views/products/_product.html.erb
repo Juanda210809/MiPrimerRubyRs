@@ -1,0 +1,4 @@
+<h2><%= product.titulo%></h2>
+<%=image_tag product.foto, width: 100 if product.foto.attached?%>
+<span><%= product.precio%> COP</span>
+<%= link_to 'ver Producto', product_path(product.id), class: 'pro' %>

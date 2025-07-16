@@ -1,0 +1,37 @@
+es:
+  activerecord:
+    models:
+      product: Product
+    attributes:
+      product:
+        titulo: 'Product Name'
+        descripcion: 'Description'
+        precio: 'Price'
+        foto: 'Photo'
+    errors:
+      models:
+        product:
+          attributes:
+            titulo: 
+              blank: ': Cannot be blank'
+            descripcion: 
+              blank: ': Cannot be blank'
+            precio: 
+              blank: ': Cannot be blank'
+            foto: 
+              blank: ': Cannot be blank'
+  common:
+    confirm: 'Are you sure?'
+  products:
+    edit:
+      titulo: 'Edit Product'
+    new:
+      titulo: 'New Product'
+    index:
+      titulo: 'Add Product'
+    create:
+      created: 'Product created !!!'
+    update:
+      updated: 'Product updated !!!'
+    destroy:
+      destroyed: 'Product deleted !!!'

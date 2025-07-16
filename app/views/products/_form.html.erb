@@ -1,0 +1,29 @@
+
+<%=form_with model: @product do |form| %>
+<% @product.errors.full_messages.each do |error| %>
+<div><%= error%></div>
+    
+    <%end%>
+   
+    <div>
+        <%= form.label :titulo %>
+        <%=form.text_field :titulo%>
+    </div>
+
+    <div>
+        <%= form.label :descripcion %>
+        <%=form.text_area :descripcion%>
+    </div>
+    <div>
+        <%= form.label :precio %>
+        <%=form.number_field :precio%>
+    </div>
+
+    <div>
+        <%= form.label :foto %>
+        <%=form.file_field :foto%>
+    </div>
+
+    <%=form.submit%>
+
+<%end%>

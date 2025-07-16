@@ -1,0 +1,17 @@
+
+<h1 class="titulo"><%= @product.titulo %></h1>
+<%=image_tag @product.foto ,width: 500 if @product.foto.attached?%>
+<p class="descripcion"><%= @product.descripcion %></p>
+<p class="precio"><%= @product.precio %></p>
+
+<div><%= link_to 'Editar Info', edit_product_path(@product) %></div>
+
+<!-- Este link usa método DELETE por Turbo y muestra confirmación -->
+<div><%= link_to 'Eliminar', product_path(@product), data: {
+  turbo_method: :delete,
+  turbo_confirm: t('common.confirm')
+} %></div>
+
+<%= link_to 'Volver', products_path %>
+
+ 
