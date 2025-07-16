@@ -1,0 +1,10 @@
+
+<%=form_with url: products_enviar_correo_path, method: :post do %>
+    <div>
+        <%=label_tag :email, "Tu correo"%><br>
+        <%=email_field_tag :email%>
+  
+
+    </div>
+          <%=submit_tag "Enviar"%>
+<%end%>

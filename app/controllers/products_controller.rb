@@ -51,4 +51,15 @@ class ProductsController < ApplicationController
 def product
   @product = Product.find(params[:id])
 end
+
+def ejecutar_envio_correo 
+  email  = params[:email]
+  puts "el correo ingresado es #{email}"
+  EnviarCorreoJob.perform_later(email)
+  redirect_to products_path, notice: "Correo enviado a: #{email}"
+end
+
+def formulario_correo
+  
+end
 end

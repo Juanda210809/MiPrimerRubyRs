@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
     
-  resources :products , path:'/' do
-    get '/buscarpornombre'
-  end
+  resources :products , path:'/' 
+
+
+get '/products/enviar_correo', to: 'products#formulario_correo', as: :formulario_correo
+post '/products/enviar_correo', to: 'products#ejecutar_envio_correo'
+
 
   #delete 'products/:id', to: 'products#destroy'
   #patch 'products/:id', to: 'products#update'
